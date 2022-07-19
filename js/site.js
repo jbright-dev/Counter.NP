@@ -12,7 +12,7 @@ function getNumbers(){
 
         let numbers = generateNumbers(startValue,endValue);
 
-        displayValues(numbers); //numbers is passed into displayValues
+        displayValues(numbers);//numbers is passed into displayValues
 
     }else{
         Swal.fire({
@@ -32,6 +32,7 @@ function generateNumbers(start, stop){
 
     for (let i = start; i <= stop; i++){
         numbers.push(i);
+        numbers.reverse;
                 
     }
 
@@ -59,17 +60,38 @@ function displayValues(numbersArray){
         //gets the value in the array at the current index
         div.innerHTML = numbersArray[index];
 
+        //define the variable current Numbers as numbersArray[index];
+        let currentNumbers = numbersArray[index];
+
+        if (currentNumbers % 2===0 ) {
+            div.classList.add("even");            
+            } else {
+            div.classList.add("odd");                
+            }
+
         //add the class to the div
         div.classList.add("col");
 
-        //if number is ood
+        //if number is odd
         div.classList.add("odd");
-
-        //if number is even
-        div.classList.add("even")
 
         //append to the page
         results.appendChild(div);
+
     }
 
 }
+
+
+/*Solution Pseudocode
+
+Define The Controller Function
+    Create a function named getNumbers where-(){
+        
+        The variable startValue is defined as the value of the input of the element posessing an
+        id of startValue, which is found within the html document;
+
+        The variable stopValue is defined as the value of the input of the element posessing an
+        id of stopValue, which is found within the html document;
+        
+        Create an if where, using the  */
