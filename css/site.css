@@ -76,7 +76,7 @@ body{ /*This makes the page one column*/
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
 .btn-outline-primary:focus{
-    color: var(--jb-light-color)
+    color: var(--jb-light-color);
     border-color: var(--jb-secondary-color) !important;
     background-color: var(--jb-primary-color) !important;
 }
@@ -108,4 +108,16 @@ body{ /*This makes the page one column*/
 .social>a:hover{
     color: var(--jb-highlight1-color);
     opacity: .9;
+}
+
+.odd{
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+
+.even{
+    font-style: italic;
+    font-size: 4rem;
+    color: blue;
 }
