@@ -63,6 +63,8 @@ function displayValues(numbersArray){
         //define the variable current Numbers as numbersArray[index];
         let currentNumbers = numbersArray[index];
 
+        /*If the varialbe currentNumbers is a modulous of two add the even class
+        if not add the odd class */
         if (currentNumbers % 2===0 ) {
             div.classList.add("even");            
             } else {
