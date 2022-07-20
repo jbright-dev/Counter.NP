@@ -32,7 +32,6 @@ function generateNumbers(start, stop){
 
     for (let i = start; i <= stop; i++){
         numbers.push(i);
-        numbers.reverse;
                 
     }
 
@@ -63,7 +62,7 @@ function displayValues(numbersArray){
         //define the variable current Numbers as numbersArray[index];
         let currentNumbers = numbersArray[index];
 
-        /*If the varialbe currentNumbers is a modulous of two add the even class
+        /*If the varial be currentNumbers is a modulous of two add the even class
         if not add the odd class */
         if (currentNumbers % 2===0 ) {
             div.classList.add("even");            
@@ -73,9 +72,6 @@ function displayValues(numbersArray){
 
         //add the class to the div
         div.classList.add("col");
-
-        //if number is odd
-        div.classList.add("odd");
 
         //append to the page
         results.appendChild(div);
