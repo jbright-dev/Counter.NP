@@ -94,7 +94,7 @@ function displayValues(displayArray){
             /*If not*/
             } else {
 
-            /*Within the scope black of the if statement add the text string "odd" to the class of the div variable*/
+            /*Within the scope block of the if statement add the text string "odd" to the class of the div variable*/
             div.classList.add("odd");                
             }
 
